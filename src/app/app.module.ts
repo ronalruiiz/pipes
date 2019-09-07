@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 
 import {UrlsecurePipe} from './pipes/urlsecure.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipesComponent,
     UrlsecurePipe,
-    UrlsecurePipe
+    UrlsecurePipe,
+    PasswordPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
